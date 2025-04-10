@@ -1,0 +1,65 @@
+:root {
+    --background-color: #f8f9fa;
+    --border-color: #dee2e6;
+    --text-color: #343a40;
+    --hover-color: #007bff;
+    --card-background-color: #ffffff;
+    --card-border-color: #dee2e6;
+    --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --card-hover-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    --dark-background-color: #2c2c2c;
+    --dark-text-color: #ddd;
+    --dark-card-background-color: #2c2c2c;
+    --dark-card-border-color: #444;
+    --dark-card-text-color: #ddd;
+    --dark-card-hover-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+    --button-background-color: #007bff;
+}
+
+[data-testid="stSidebarNav"] {
+    background-color: var(--background-color);
+    border-right: 1px solid var(--border-color);
+}
+[data-testid="stSidebarNav"]::before {
+    content: "📊 Navigation";
+    font-size: 1.2em;
+    margin-left: 10px;
+    margin-top: 10px;
+    display: block;
+    color: var(--text-color);
+}
+.suggestion-card {
+    background-color: var(--card-background-color);
+    border: 1px solid var(--card-border-color);
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: var(--card-shadow);
+    transition: box-shadow 0.3s ease;
+}
+.suggestion-card:hover {
+    box-shadow: var(--card-hover-shadow);
+}
+.suggestion-card h4 {
+    margin: 0;
+    font-size: 1.2em;
+    color: var(--text-color);
+}
+.suggestion-card p {
+    margin: 5px 0 0;
+    color: #6c757d;
+}
+.dark-mode .suggestion-card {
+    background-color: var(--dark-card-background-color);
+    border: 1px solid var(--dark-card-border-color);
+    color: var(--dark-card-text-color);
+}
+.dark-mode .suggestion-card:hover {
+    box-shadow: var(--dark-card-hover-shadow);
+}
+.dark-mode .suggestion-card h4 {
+    color: var(--dark-card-text-color);
+}
+.dark-mode .suggestion-card p {
+    color: #aaa;
+}

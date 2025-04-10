@@ -1,0 +1,17 @@
+# pandas: Data analysis and manipulation library
+pandas
+
+# streamlit: Web app framework for data science and machine learning
+streamlit
+
+# textblob: Text processing and sentiment analysis library
+textblob
+
+# cleantext: Text cleaning library for preprocessing
+cleantext
+
+# openpyxl: Read/write Excel 2010 xlsx/xlsm files
+openpyxl
+
+# plotly: Interactive graphing library
+plotly
